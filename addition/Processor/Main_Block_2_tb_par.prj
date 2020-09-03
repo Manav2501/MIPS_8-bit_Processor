@@ -1,0 +1,2 @@
+verilog work "netgen/par/Main_Block_timesim.v"
+verilog work "Main_Block_2_tb.v"

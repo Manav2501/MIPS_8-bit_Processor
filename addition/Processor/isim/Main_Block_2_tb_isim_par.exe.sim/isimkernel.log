@@ -1,0 +1,29 @@
+Command line:
+   Main_Block_2_tb_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59513
+
+Fri Nov 10 15:17:43 2017
+
+
+ Elaboration Time: 0.328125 sec
+
+ Current Memory Usage: 939.147 Meg
+
+ Total Signals          : 14191
+ Total Nets             : 9919
+ Total Signal Drivers   : 8695
+ Total Blocks           : 1746
+ Total Primitive Blocks : 1165
+ Total Processes        : 11832
+ Total Traceable Variables  : 5692
+ Total Scalar Nets and Variables : 345906
+Total Line Count : 16954
+
+ Total Simulation Time: 0.578125 sec
+
+ Current Memory Usage: 798.441 Meg
+
+Fri Nov 10 15:57:41 2017
+

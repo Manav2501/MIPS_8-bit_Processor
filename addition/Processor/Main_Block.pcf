@@ -1,0 +1,118 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Nov 10 15:14:39 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "reset" LOCATE = SITE "C12" LEVEL 1;
+PIN reset_pin<0> = BEL "reset" PINNAME PAD;
+PIN "reset_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "data_out<4>" LOCATE = SITE "R18" LEVEL 1;
+COMP "data_out<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "data_out<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "data_out<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "data_out<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "data_out<7>" LOCATE = SITE "U16" LEVEL 1;
+COMP "interrupt" LOCATE = SITE "P18" LEVEL 1;
+PIN interrupt_pin<0> = BEL "interrupt" PINNAME PAD;
+PIN "interrupt_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "data_out<6>" LOCATE = SITE "U17" LEVEL 1;
+COMP "data_out<5>" LOCATE = SITE "V17" LEVEL 1;
+COMP "data_in<7>" LOCATE = SITE "R13" LEVEL 1;
+COMP "data_in<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "data_in<6>" LOCATE = SITE "U18" LEVEL 1;
+COMP "data_in<0>" LOCATE = SITE "J15" LEVEL 1;
+COMP "data_in<3>" LOCATE = SITE "R15" LEVEL 1;
+COMP "data_in<4>" LOCATE = SITE "R17" LEVEL 1;
+COMP "data_in<1>" LOCATE = SITE "L16" LEVEL 1;
+COMP "data_in<2>" LOCATE = SITE "M13" LEVEL 1;
+PIN
+        DM/dm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram_pins<32>
+        = BEL
+        "DM/dm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+        PINNAME CLKARDCLK;
+PIN
+        DM/dm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram_pins<33>
+        = BEL
+        "DM/dm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+        PINNAME CLKBWRCLK;
+PIN
+        PC_IM/pm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram_pins<32>
+        = BEL
+        "PC_IM/pm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+        PINNAME CLKARDCLK;
+PIN
+        PC_IM/pm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram_pins<33>
+        = BEL
+        "PC_IM/pm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+        PINNAME CLKBWRCLK;
+TIMEGRP clk = BEL "EX/flag_reg_1" BEL "EX/flag_reg_0" BEL "EX/ans_ex_7" BEL
+        "EX/ans_ex_6" BEL "EX/ans_ex_5" BEL "EX/ans_ex_4" BEL "EX/ans_ex_3"
+        BEL "EX/ans_ex_2" BEL "EX/ans_ex_1" BEL "EX/ans_ex_0" BEL
+        "EX/DM_data_7" BEL "EX/DM_data_6" BEL "EX/DM_data_5" BEL
+        "EX/DM_data_4" BEL "EX/DM_data_3" BEL "EX/DM_data_2" BEL
+        "EX/DM_data_1" BEL "EX/DM_data_0" BEL "EX/data_out_7" BEL
+        "EX/data_out_6" BEL "EX/data_out_5" BEL "EX/data_out_4" BEL
+        "EX/data_out_3" BEL "EX/data_out_2" BEL "EX/data_out_1" BEL
+        "EX/data_out_0" BEL "PC_IM/Next_Address_7" BEL "PC_IM/Next_Address_6"
+        BEL "PC_IM/Next_Address_5" BEL "PC_IM/Next_Address_4" BEL
+        "PC_IM/Next_Address_3" BEL "PC_IM/Next_Address_2" BEL
+        "PC_IM/Next_Address_1" BEL "PC_IM/Next_Address_0" BEL
+        "PC_IM/ins_prv_23" BEL "PC_IM/ins_prv_22" BEL "PC_IM/ins_prv_21" BEL
+        "PC_IM/ins_prv_20" BEL "PC_IM/ins_prv_19" BEL "PC_IM/ins_prv_18" BEL
+        "PC_IM/ins_prv_17" BEL "PC_IM/ins_prv_16" BEL "PC_IM/ins_prv_15" BEL
+        "PC_IM/ins_prv_14" BEL "PC_IM/ins_prv_13" BEL "PC_IM/ins_prv_12" BEL
+        "PC_IM/ins_prv_11" BEL "PC_IM/ins_prv_10" BEL "PC_IM/ins_prv_9" BEL
+        "PC_IM/ins_prv_8" BEL "PC_IM/ins_prv_7" BEL "PC_IM/ins_prv_6" BEL
+        "PC_IM/ins_prv_5" BEL "PC_IM/ins_prv_4" BEL "PC_IM/ins_prv_3" BEL
+        "PC_IM/ins_prv_2" BEL "PC_IM/ins_prv_1" BEL "PC_IM/ins_prv_0" BEL
+        "PC_IM/Hold_Address_7" BEL "PC_IM/Hold_Address_6" BEL
+        "PC_IM/Hold_Address_5" BEL "PC_IM/Hold_Address_4" BEL
+        "PC_IM/Hold_Address_3" BEL "PC_IM/Hold_Address_2" BEL
+        "PC_IM/Hold_Address_1" BEL "PC_IM/Hold_Address_0" BEL "DM/Ex_out_7"
+        BEL "DM/Ex_out_6" BEL "DM/Ex_out_5" BEL "DM/Ex_out_4" BEL
+        "DM/Ex_out_3" BEL "DM/Ex_out_2" BEL "DM/Ex_out_1" BEL "DM/Ex_out_0"
+        BEL "JC/d1/Q_tmp" BEL "JC/d2/Q_tmp" BEL "JC/tmp_flag3_0" BEL
+        "JC/tmp_reg_curr3_7" BEL "JC/tmp_reg_curr3_6" BEL "JC/tmp_reg_curr3_5"
+        BEL "JC/tmp_reg_curr3_4" BEL "JC/tmp_reg_curr3_3" BEL
+        "JC/tmp_reg_curr3_2" BEL "JC/tmp_reg_curr3_1" BEL "JC/tmp_reg_curr3_0"
+        BEL "RB/BR_7" BEL "RB/BR_6" BEL "RB/BR_5" BEL "RB/BR_4" BEL "RB/BR_3"
+        BEL "RB/BR_2" BEL "RB/BR_1" BEL "RB/BR_0" BEL "RB/AR_7" BEL "RB/AR_6"
+        BEL "RB/AR_5" BEL "RB/AR_4" BEL "RB/AR_3" BEL "RB/AR_2" BEL "RB/AR_1"
+        BEL "RB/AR_0" BEL "SC/d1/Q_tmp" BEL "SC/d2/Q_tmp" BEL "SC/d3/Q_tmp"
+        BEL "SC/d4/Q_tmp" BEL "WB/ans_wb_tmp2_7" BEL "WB/ans_wb_tmp2_6" BEL
+        "WB/ans_wb_tmp2_5" BEL "WB/ans_wb_tmp2_4" BEL "WB/ans_wb_tmp2_3" BEL
+        "WB/ans_wb_tmp2_2" BEL "WB/ans_wb_tmp2_1" BEL "WB/ans_wb_tmp2_0" BEL
+        "DC/REG2/tmp2_0" BEL "DC/REG2/tmp2_1" BEL "DC/REG2/tmp2_2" BEL
+        "DC/REG2/tmp2_3" BEL "DC/REG2/tmp2_4" BEL "DC/REG3/tmp2_0" BEL
+        "DC/REG3/tmp2_1" BEL "DC/REG3/tmp2_2" BEL "DC/REG3/tmp2_3" BEL
+        "DC/REG3/tmp2_4" BEL "DC/REG4/tmp2_0" BEL "DC/REG4/tmp2_1" BEL
+        "DC/REG4/tmp2_2" BEL "DC/REG4/tmp2_3" BEL "DC/REG4/tmp2_4" BEL
+        "DC/REG5/tmp2_0" BEL "DC/REG5/tmp2_1" BEL "DC/REG5/tmp2_2" BEL
+        "DC/REG5/tmp2_3" BEL "DC/REG5/tmp2_4" BEL "DC/REG6/tmp2_0" BEL
+        "DC/REG6/tmp2_1" BEL "DC/REG6/tmp2_2" BEL "DC/REG6/tmp2_3" BEL
+        "DC/REG6/tmp2_4" BEL "DC/REG7/tmp2_0" BEL "DC/REG7/tmp2_1" BEL
+        "DC/REG7/tmp2_2" BEL "DC/REG7/tmp2_3" BEL "DC/REG7/tmp2_4" BEL
+        "DC/DFF2/Q_tmp" BEL "DC/DFF5/Q_tmp" BEL "DC/DFF6/Q_tmp" BEL
+        "DC/DFF7/Q_tmp" BEL "DC/DFF8/Q_tmp" BEL "DC/DFF9/Q_tmp" BEL
+        "clk_BUFGP/BUFG" BEL "RB/Mram_mem31/SP" BEL "RB/Mram_mem31/DP" BEL
+        "RB/Mram_mem122/SP" BEL "RB/Mram_mem122/DP" BEL "RB/Mram_mem32/SP" BEL
+        "RB/Mram_mem32/DP" BEL "RB/Mram_mem121/SP" BEL "RB/Mram_mem121/DP" BEL
+        "RB/Mram_mem11_RAMA_D1" BEL "RB/Mram_mem11_RAMA" BEL
+        "RB/Mram_mem11_RAMB_D1" BEL "RB/Mram_mem11_RAMB" BEL
+        "RB/Mram_mem11_RAMC_D1" BEL "RB/Mram_mem11_RAMC" BEL
+        "RB/Mram_mem11_RAMD_D1" BEL "RB/Mram_mem11_RAMD" BEL
+        "RB/Mram_mem2_RAMA_D1" BEL "RB/Mram_mem2_RAMA" BEL
+        "RB/Mram_mem2_RAMB_D1" BEL "RB/Mram_mem2_RAMB" BEL
+        "RB/Mram_mem2_RAMC_D1" BEL "RB/Mram_mem2_RAMC" BEL
+        "RB/Mram_mem2_RAMD_D1" BEL "RB/Mram_mem2_RAMD" PIN
+        "DM/dm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram_pins<32>"
+        PIN
+        "DM/dm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram_pins<33>"
+        PIN
+        "PC_IM/pm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram_pins<32>"
+        PIN
+        "PC_IM/pm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram_pins<33>";
+TS_clock = PERIOD TIMEGRP "clk" 1000 ns HIGH 50% INPUT_JITTER 0.05 ns;
+SCHEMATIC END;
+

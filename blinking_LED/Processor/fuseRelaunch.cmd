@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Study/SEM_3/Computer Organisation(project)/Processor/Main_Block_2_tb_isim_beh.exe" -prj "D:/Study/SEM_3/Computer Organisation(project)/Processor/Main_Block_2_tb_beh.prj" "work.Main_Block_2_tb" "work.glbl" 

@@ -1,0 +1,16 @@
+[Inputs]
+clk
+reset
+=A[7:0]=
+=B[7:0]=
+=data_in[7:0]=
+=op_dec[4:0]=
+[Outputs]
+=ans_ex[7:0]=
+=DM_data[7:0]=
+=data_out[7:0]=
+=flag_ex[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Execution_Block
+

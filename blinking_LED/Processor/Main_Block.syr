@@ -1,0 +1,685 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Reading design: Main_Block.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Main_Block.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Main_Block"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : Main_Block
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Study\SEM_3\Computer Organisation(project)\Processor\SC_Block.v" into library work
+Parsing module <SC_Block>.
+Parsing module <D_FF>.
+Analyzing Verilog file "D:\Study\SEM_3\Computer Organisation(project)\Processor\ipcore_dir\Program_Memory.v" into library work
+Parsing module <Program_Memory>.
+Analyzing Verilog file "D:\Study\SEM_3\Computer Organisation(project)\Processor\ipcore_dir\Data_Memory.v" into library work
+Parsing module <Data_Memory>.
+Analyzing Verilog file "D:\Study\SEM_3\Computer Organisation(project)\Processor\WB_Block.v" into library work
+Parsing module <WB_Block>.
+Analyzing Verilog file "D:\Study\SEM_3\Computer Organisation(project)\Processor\RB_Block.v" into library work
+Parsing module <RB_Block>.
+Analyzing Verilog file "D:\Study\SEM_3\Computer Organisation(project)\Processor\PC_IM_Block.v" into library work
+Parsing module <PC_IM_Block>.
+Analyzing Verilog file "D:\Study\SEM_3\Computer Organisation(project)\Processor\JC_Block.v" into library work
+Parsing module <JC_Block>.
+Analyzing Verilog file "D:\Study\SEM_3\Computer Organisation(project)\Processor\Execution_Block.v" into library work
+Parsing module <Execution_Block>.
+Parsing module <add_sub_8bit>.
+Parsing module <full_adder>.
+Analyzing Verilog file "D:\Study\SEM_3\Computer Organisation(project)\Processor\DM_Block.v" into library work
+Parsing module <DM_Block>.
+Analyzing Verilog file "D:\Study\SEM_3\Computer Organisation(project)\Processor\DC_Block.v" into library work
+Parsing module <DC_Block>.
+Parsing module <Reg_5bit>.
+Analyzing Verilog file "D:\Study\SEM_3\Computer Organisation(project)\Processor\Main_Block.v" into library work
+Parsing module <Main_Block>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Main_Block>.
+
+Elaborating module <Execution_Block>.
+
+Elaborating module <add_sub_8bit>.
+
+Elaborating module <full_adder>.
+
+Elaborating module <PC_IM_Block>.
+
+Elaborating module <Program_Memory>.
+WARNING:HDLCompiler:1499 - "D:\Study\SEM_3\Computer Organisation(project)\Processor\ipcore_dir\Program_Memory.v" Line 39: Empty module <Program_Memory> remains a black box.
+
+Elaborating module <DM_Block>.
+
+Elaborating module <Data_Memory>.
+WARNING:HDLCompiler:1499 - "D:\Study\SEM_3\Computer Organisation(project)\Processor\ipcore_dir\Data_Memory.v" Line 39: Empty module <Data_Memory> remains a black box.
+
+Elaborating module <JC_Block>.
+
+Elaborating module <D_FF>.
+
+Elaborating module <RB_Block>.
+
+Elaborating module <SC_Block>.
+
+Elaborating module <WB_Block>.
+
+Elaborating module <DC_Block>.
+
+Elaborating module <Reg_5bit>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Main_Block>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\Main_Block.v".
+    Summary:
+	no macro.
+Unit <Main_Block> synthesized.
+
+Synthesizing Unit <Execution_Block>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\Execution_Block.v".
+    Found 8-bit register for signal <DM_data>.
+    Found 8-bit register for signal <data_out>.
+    Found 4-bit register for signal <flag_reg>.
+    Found 8-bit register for signal <ans_ex>.
+    Found 8-bit shifter logical right for signal <A[7]_B[2]_shift_right_29_OUT> created at line 51
+    Found 8-bit shifter logical left for signal <A[7]_B[7]_shift_left_53_OUT> created at line 61
+    Found 8-bit shifter logical right for signal <A[7]_B[7]_shift_right_55_OUT> created at line 62
+    Found 8-bit 8-to-1 multiplexer for signal <A[7]_A[7]_mux_28_OUT> created at line 44.
+    Summary:
+	inferred  28 D-type flip-flop(s).
+	inferred  19 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <Execution_Block> synthesized.
+
+Synthesizing Unit <add_sub_8bit>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\Execution_Block.v".
+    Summary:
+Unit <add_sub_8bit> synthesized.
+
+Synthesizing Unit <full_adder>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\Execution_Block.v".
+    Summary:
+Unit <full_adder> synthesized.
+
+Synthesizing Unit <PC_IM_Block>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\PC_IM_Block.v".
+    Found 8-bit register for signal <Hold_Address>.
+    Found 24-bit register for signal <ins_prv>.
+    Found 8-bit register for signal <Next_Address>.
+    Found 8-bit adder for signal <IA> created at line 48.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <PC_IM_Block> synthesized.
+
+Synthesizing Unit <DM_Block>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\DM_Block.v".
+    Found 8-bit register for signal <Ex_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <DM_Block> synthesized.
+
+Synthesizing Unit <JC_Block>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\JC_Block.v".
+WARNING:Xst:647 - Input <ins<18:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <tmp_reg_curr3>.
+    Found 4-bit register for signal <tmp_flag3>.
+    Found 8-bit adder for signal <inr_curr> created at line 66.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <JC_Block> synthesized.
+
+Synthesizing Unit <D_FF>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\SC_Block.v".
+    Found 1-bit register for signal <Q_tmp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <D_FF> synthesized.
+
+Synthesizing Unit <RB_Block>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\RB_Block.v".
+WARNING:Xst:647 - Input <ins<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ins<23:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <BR>.
+    Found 8-bit register for signal <AR>.
+    Found 32x8-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit 4-to-1 multiplexer for signal <A> created at line 31.
+    Found 8-bit 4-to-1 multiplexer for signal <BI> created at line 34.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <RB_Block> synthesized.
+
+Synthesizing Unit <SC_Block>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\SC_Block.v".
+WARNING:Xst:647 - Input <ins<18:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <SC_Block> synthesized.
+
+Synthesizing Unit <WB_Block>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\WB_Block.v".
+    Found 8-bit register for signal <ans_wb_tmp2>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <WB_Block> synthesized.
+
+Synthesizing Unit <DC_Block>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\DC_Block.v".
+    Found 8-bit register for signal <reg_imm>.
+    Found 5-bit comparator equal for signal <comp1> created at line 94
+    Found 5-bit comparator equal for signal <comp2> created at line 95
+    Found 5-bit comparator equal for signal <comp3> created at line 96
+    Found 5-bit comparator equal for signal <comp4> created at line 97
+    Found 5-bit comparator equal for signal <comp5> created at line 98
+    Found 5-bit comparator equal for signal <comp6> created at line 99
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <DC_Block> synthesized.
+
+Synthesizing Unit <Reg_5bit>.
+    Related source file is "D:\Study\SEM_3\Computer Organisation(project)\Processor\DC_Block.v".
+    Found 5-bit register for signal <tmp2>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <Reg_5bit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x8-bit dual-port RAM                                : 2
+# Adders/Subtractors                                   : 2
+ 8-bit adder                                           : 2
+# Registers                                            : 36
+ 1-bit register                                        : 15
+ 24-bit register                                       : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 7
+ 8-bit register                                        : 11
+# Comparators                                          : 6
+ 5-bit comparator equal                                : 6
+# Multiplexers                                         : 35
+ 2-bit 2-to-1 multiplexer                              : 4
+ 24-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 22
+ 8-bit 4-to-1 multiplexer                              : 2
+ 8-bit 8-to-1 multiplexer                              : 1
+# Logic shifters                                       : 3
+ 8-bit shifter logical left                            : 1
+ 8-bit shifter logical right                           : 2
+# Xors                                                 : 27
+ 1-bit xor2                                            : 25
+ 1-bit xor8                                            : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/Program_Memory.ngc>.
+Reading core <ipcore_dir/Data_Memory.ngc>.
+Loading core <Program_Memory> for timing and area information for instance <pm>.
+Loading core <Data_Memory> for timing and area information for instance <dm>.
+
+Synthesizing (advanced) Unit <RB_Block>.
+INFO:Xst:3231 - The small RAM <Mram_mem> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <VCC>           | high     |
+    |     addrA          | connected to signal <RW_dm>         |          |
+    |     diA            | connected to signal <ans_dm>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     addrB          | connected to signal <ins<13:9>>     |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_mem1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <VCC>           | high     |
+    |     addrA          | connected to signal <RW_dm>         |          |
+    |     diA            | connected to signal <ans_dm>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     addrB          | connected to signal <ins<8:4>>      |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <RB_Block> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x8-bit dual-port distributed RAM                    : 2
+# Adders/Subtractors                                   : 2
+ 8-bit adder                                           : 2
+# Registers                                            : 170
+ Flip-Flops                                            : 170
+# Comparators                                          : 6
+ 5-bit comparator equal                                : 6
+# Multiplexers                                         : 35
+ 2-bit 2-to-1 multiplexer                              : 4
+ 24-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 22
+ 8-bit 4-to-1 multiplexer                              : 2
+ 8-bit 8-to-1 multiplexer                              : 1
+# Logic shifters                                       : 3
+ 8-bit shifter logical left                            : 1
+ 8-bit shifter logical right                           : 2
+# Xors                                                 : 27
+ 1-bit xor2                                            : 25
+ 1-bit xor8                                            : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <DFF3/Q_tmp> in Unit <DC_Block> is equivalent to the following FF/Latch, which will be removed : <REG1/tmp2_0> 
+WARNING:Xst:2677 - Node <tmp_flag3_2> of sequential type is unconnected in block <JC_Block>.
+WARNING:Xst:2677 - Node <tmp_flag3_3> of sequential type is unconnected in block <JC_Block>.
+
+Optimizing unit <Main_Block> ...
+
+Optimizing unit <Execution_Block> ...
+
+Optimizing unit <add_sub_8bit> ...
+
+Optimizing unit <PC_IM_Block> ...
+
+Optimizing unit <DM_Block> ...
+
+Optimizing unit <JC_Block> ...
+WARNING:Xst:2677 - Node <tmp_flag3_0> of sequential type is unconnected in block <JC_Block>.
+WARNING:Xst:2677 - Node <tmp_flag3_1> of sequential type is unconnected in block <JC_Block>.
+WARNING:Xst:2677 - Node <d2/Q_tmp> of sequential type is unconnected in block <JC_Block>.
+
+Optimizing unit <RB_Block> ...
+
+Optimizing unit <SC_Block> ...
+
+Optimizing unit <WB_Block> ...
+
+Optimizing unit <DC_Block> ...
+WARNING:Xst:2677 - Node <EX/flag_reg_3> of sequential type is unconnected in block <Main_Block>.
+WARNING:Xst:2677 - Node <EX/flag_reg_2> of sequential type is unconnected in block <Main_Block>.
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_1> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/reg_imm_0> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_2> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/reg_imm_1> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_3> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/reg_imm_2> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_4> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/reg_imm_3> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_5> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/reg_imm_4> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_6> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/reg_imm_5> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_7> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/reg_imm_6> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_8> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/reg_imm_7> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_20> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/REG1/tmp2_1> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_21> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/REG1/tmp2_2> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_22> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/REG1/tmp2_3> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_23> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/REG1/tmp2_4> 
+INFO:Xst:2261 - The FF/Latch <PC_IM/ins_prv_19> in Unit <Main_Block> is equivalent to the following FF/Latch, which will be removed : <DC/DFF3/Q_tmp> 
+INFO:Xst:2261 - The FF/Latch <SC/d1/Q_tmp> in Unit <Main_Block> is equivalent to the following 2 FFs/Latches, which will be removed : <DC/DFF1/Q_tmp> <DC/DFF4/Q_tmp> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Main_Block, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 149
+ Flip-Flops                                            : 149
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Main_Block.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 383
+#      GND                         : 3
+#      INV                         : 1
+#      LUT2                        : 7
+#      LUT3                        : 25
+#      LUT4                        : 50
+#      LUT5                        : 100
+#      LUT6                        : 182
+#      MUXF7                       : 12
+#      VCC                         : 3
+# FlipFlops/Latches                : 149
+#      FD                          : 58
+#      FDR                         : 74
+#      FDRE                        : 17
+# RAMS                             : 8
+#      RAM32M                      : 2
+#      RAM32X1D                    : 4
+#      RAMB18E1                    : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 10
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             149  out of  126800     0%  
+ Number of Slice LUTs:                  381  out of  63400     0%  
+    Number used as Logic:               365  out of  63400     0%  
+    Number used as Memory:               16  out of  19000     0%  
+       Number used as RAM:               16
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    424
+   Number with an unused Flip Flop:     275  out of    424    64%  
+   Number with an unused LUT:            43  out of    424    10%  
+   Number of fully used LUT-FF pairs:   106  out of    424    25%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    210     9%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    135     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 157   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 10.019ns (Maximum Frequency: 99.810MHz)
+   Minimum input arrival time before clock: 7.015ns
+   Maximum output required time after clock: 0.877ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 10.019ns (frequency: 99.810MHz)
+  Total number of paths / destination ports: 2899772 / 269
+-------------------------------------------------------------------------
+Delay:               10.019ns (Levels of Logic = 11)
+  Source:            DM/dm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram (RAM)
+  Destination:       PC_IM/Next_Address_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: DM/dm/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram to PC_IM/Next_Address_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOBDO9    4   2.454   0.441  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram (douta<7>)
+     end scope: 'DM/dm:douta<7>'
+     LUT3:I2->O            5   0.124   0.743  DM/Mmux_ans_dm81 (ans_dm<7>)
+     LUT5:I2->O            6   0.124   0.952  RB/Mmux_B82 (B<7>)
+     LUT5:I0->O           17   0.124   0.527  EX/Mmux_ans_tmp841 (EX/Mmux_ans_tmp84)
+     LUT6:I5->O            1   0.124   0.421  EX/Mmux_ans_tmp246 (EX/Mmux_ans_tmp245)
+     LUT6:I5->O            1   0.124   0.536  EX/Mmux_ans_tmp2412_SW1 (N90)
+     LUT6:I4->O            2   0.124   0.782  EX/Mmux_ans_tmp2413 (EX/ans_tmp<5>)
+     LUT6:I2->O           11   0.124   0.487  EX/Mmux_flag_ex24 (flag_ex<1>)
+     LUT6:I5->O            7   0.124   0.979  PC_IM/Mmux_Current_Address6 (Current_Address<5>)
+     LUT6:I0->O            2   0.124   0.427  PC_IM/Madd_IA_cy<5>11 (PC_IM/Madd_IA_cy<5>)
+     LUT3:I2->O            1   0.124   0.000  PC_IM/Madd_IA_xor<7>11 (PC_IM/IA<7>)
+     FDR:D                     0.030          PC_IM/Next_Address_7
+    ----------------------------------------
+    Total                     10.019ns (3.724ns logic, 6.295ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8392 / 229
+-------------------------------------------------------------------------
+Offset:              7.015ns (Levels of Logic = 10)
+  Source:            data_in<1> (PAD)
+  Destination:       PC_IM/Next_Address_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: data_in<1> to PC_IM/Next_Address_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.919  data_in_1_IBUF (data_in_1_IBUF)
+     LUT5:I0->O            1   0.124   0.716  EX/Mmux_ans_tmp81 (EX/Mmux_ans_tmp8)
+     LUT6:I3->O            1   0.124   0.776  EX/Mmux_ans_tmp84 (EX/Mmux_ans_tmp82)
+     LUT6:I2->O            1   0.124   0.716  EX/Mmux_ans_tmp88 (EX/Mmux_ans_tmp812)
+     LUT6:I3->O            2   0.124   0.427  EX/Mmux_ans_tmp813 (EX/ans_tmp<1>)
+     LUT6:I5->O            1   0.124   0.421  EX/Mmux_flag_ex23_SW1 (N57)
+     LUT6:I5->O           11   0.124   0.487  EX/Mmux_flag_ex24 (flag_ex<1>)
+     LUT6:I5->O            7   0.124   0.979  PC_IM/Mmux_Current_Address6 (Current_Address<5>)
+     LUT6:I0->O            2   0.124   0.427  PC_IM/Madd_IA_cy<5>11 (PC_IM/Madd_IA_cy<5>)
+     LUT3:I2->O            1   0.124   0.000  PC_IM/Madd_IA_xor<7>11 (PC_IM/IA<7>)
+     FDR:D                     0.030          PC_IM/Next_Address_7
+    ----------------------------------------
+    Total                      7.015ns (1.147ns logic, 5.868ns route)
+                                       (16.4% logic, 83.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              0.877ns (Levels of Logic = 1)
+  Source:            EX/data_out_7 (FF)
+  Destination:       data_out<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: EX/data_out_7 to data_out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.478   0.399  EX/data_out_7 (EX/data_out_7)
+     OBUF:I->O                 0.000          data_out_7_OBUF (data_out<7>)
+    ----------------------------------------
+    Total                      0.877ns (0.478ns logic, 0.399ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.019|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 22.75 secs
+ 
+--> 
+
+Total memory usage is 448204 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

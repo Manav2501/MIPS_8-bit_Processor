@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\student\Desktop\Processor\impact.xsl
+OUTFILE=C:\Users\student\Desktop\Processor\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\student\Desktop\Processor
+LICENSE=iMPACT
+USER_INFO=iMPACT

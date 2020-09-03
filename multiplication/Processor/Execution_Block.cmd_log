@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/Study/SEM_3/CO/verilog/Processor/Execution_Block.xst" -ofn "D:/Study/SEM_3/CO/verilog/Processor/Execution_Block.syr" 
+xst -intstyle ise -ifn "D:/Study/SEM_3/CO/verilog/Processor/Execution_Block.xst" -ofn "D:/Study/SEM_3/CO/verilog/Processor/Execution_Block.syr" 
+xst -intstyle ise -ifn "D:/Study/SEM_3/CO/verilog/Processor/Execution_Block.xst" -ofn "D:/Study/SEM_3/CO/verilog/Processor/Execution_Block.syr" 
+vhdtdtfi -lib work D:/Study/SEM_3/CO/verilog/Processor/Execution_Block.v -lang verilog -prj Processor -o Execution_Block.spl -module Execution_Block -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 Execution_Block.spl D:/Study/SEM_3/CO/verilog/Processor/Execution_Block.sym 

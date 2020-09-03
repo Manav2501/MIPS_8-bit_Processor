@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\student\Desktop\Processor\Main_Block.ncd
+OUTFILE=C:\Users\student\Desktop\Processor\Main_Block.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=C:\Users\student\Desktop\Processor
+LICENSE=WebPack
+USER_INFO=210849691_0_0_828

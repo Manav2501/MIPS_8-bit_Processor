@@ -1,0 +1,67 @@
+% Specification 802.11/a 
+% Data Carrier = 48
+% lengh of cyclic prefix = 0.8 micro second
+% total bits = 10^6
+% FFT/IFFT = 64
+% Bandwidth=30MHz
+
+no_bits = 10000;
+N = 48; %total subcarrier
+
+CP_Length = ceil(0.8);
+
+M=4;
+no_data_port = 64;
+data = randsrc(1, no_data_port, 0:M-1);
+
+figure(1)
+stem(data);
+
+
+qpsk = pskmod(data, M); %virtual signal
+scatterplot(qpsk);
+
+
+block_size = 8;
+num_cols = length(qpsk)/block_size
+s2p = reshape(data, [block_size,num_cols]);
+
+%data_ifft = ifft(s2p);
+
+cp_start = block_size-CP_Length ;
+cp_end = block_size;
+
+for i = 1:num_cols
+    ifft_datamatrix(:,i) = ifft((s2p(:,1)),8);
+    
+    for j = 1:CP_Length
+        actual_CP(j,i) = ifft_datamatrix(j+cp_start,i);   
+    end
+    
+    ifft_data(:,i) = vertcat(actual_CP(:,i),ifft_datamatrix(:,i));
+end    
+
+[row_ifft_data col_ifft_data] = size(ifft_data);
+len_ofdm_data = row_ifft_data*col_ifft_data;
+ofdm_signal = reshape(ifft_data,1,len_ofdm_data);
+
+plot(real(ofdm_signal));
+
+channel = randn(1,block_size) + j;
+a_channel = filter(channel,1,ofdm_signal);
+awgn_noise = awgn(zeros(1,length(a_channel)),0);
+rec_signal = awgn_noise + a_channel;
+plot(real(rec_signal));
+
+received_signal_M = reshape(rec_signal,row_ifft_data,col_ifft_data);
+received_signal_M(1:CP_Length,:)=[];
+
+for i=1:col_ifft_data
+    fft_data_matrix(:,i) = fft(received_signal_M(:,i),8);
+end
+
+received_serial_data=reshape(fft_data_matrix,1,(block_size*num_cols));
+
+qpsk1 = pskdemod(received_serial_data, M); %virtual signal
+figure(2)
+stem(qpsk1);
